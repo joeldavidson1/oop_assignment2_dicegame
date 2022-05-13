@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace OOP_Assessment2
 {
-    public static class Input
+    public static class InputHandler
     {
         public static int GetHumanPlayerNum()
         {

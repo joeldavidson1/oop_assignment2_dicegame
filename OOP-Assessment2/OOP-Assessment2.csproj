@@ -46,8 +46,9 @@
         <Compile Include="HumanPlayer.cs" />
         <Compile Include="InvalidInputException.cs" />
         <Compile Include="IRoll.cs" />
-        <Compile Include="Input.cs" />
-        <Compile Include="Output.cs" />
+        <Compile Include="InputHandler.cs" />
+        <Compile Include="ListHandler.cs" />
+        <Compile Include="OutputConsole.cs" />
         <Compile Include="Player.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />

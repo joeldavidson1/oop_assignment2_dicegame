@@ -10,7 +10,7 @@ using System.Xml.Schema;
 
 namespace OOP_Assessment2
 {
-    public static class Output
+    public static class OutputConsole
     {
         public static void WelcomeMessage()
         {
@@ -32,9 +32,9 @@ namespace OOP_Assessment2
         {
             List<string[]> dieFaces = new List<string[]>();
 
-            foreach (int dice in diceRollList)
+            foreach (int diceNum in diceRollList)
             {
-                dieFaces.Add(die.Face(dice));
+                dieFaces.Add(die.Face(diceNum));
             }
             
             Thread.Sleep(1000);
@@ -80,7 +80,7 @@ namespace OOP_Assessment2
             Console.WriteLine($"———————————— {player.Name}'s turn ————————————");
         }
         
-        public static void DisplayPlayerRoll(bool isSecondRoll, Player player, List<int> diceRolls)
+        public static void DisplayPlayerRoll(bool isSecondRoll, Player player)
         {
             if (!isSecondRoll && player is HumanPlayer)
             {
