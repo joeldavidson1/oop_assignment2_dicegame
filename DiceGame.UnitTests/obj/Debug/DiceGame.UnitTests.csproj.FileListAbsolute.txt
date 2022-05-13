@@ -1,0 +1,11 @@
+/Users/joeldavidson/repos/OOP-Assessment2/DiceGame.UnitTests/bin/Debug/DiceGame.UnitTests.dll
+/Users/joeldavidson/repos/OOP-Assessment2/DiceGame.UnitTests/bin/Debug/DiceGame.UnitTests.pdb
+/Users/joeldavidson/repos/OOP-Assessment2/DiceGame.UnitTests/bin/Debug/nunit.framework.dll
+/Users/joeldavidson/repos/OOP-Assessment2/DiceGame.UnitTests/bin/Debug/nunit.framework.xml
+/Users/joeldavidson/repos/OOP-Assessment2/DiceGame.UnitTests/obj/Debug/DiceGame.UnitTests.csproj.AssemblyReference.cache
+/Users/joeldavidson/repos/OOP-Assessment2/DiceGame.UnitTests/obj/Debug/DiceGame.UnitTests.csproj.CoreCompileInputs.cache
+/Users/joeldavidson/repos/OOP-Assessment2/DiceGame.UnitTests/obj/Debug/DiceGame.UnitTests.csproj.CopyComplete
+/Users/joeldavidson/repos/OOP-Assessment2/DiceGame.UnitTests/obj/Debug/DiceGame.UnitTests.dll
+/Users/joeldavidson/repos/OOP-Assessment2/DiceGame.UnitTests/obj/Debug/DiceGame.UnitTests.pdb
+/Users/joeldavidson/repos/OOP-Assessment2/DiceGame.UnitTests/bin/Debug/OOP_Assessment2.exe
+/Users/joeldavidson/repos/OOP-Assessment2/DiceGame.UnitTests/bin/Debug/OOP_Assessment2.pdb

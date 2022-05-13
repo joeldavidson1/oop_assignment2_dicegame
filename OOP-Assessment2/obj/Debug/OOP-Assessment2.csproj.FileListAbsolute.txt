@@ -1,0 +1,6 @@
+/Users/joeldavidson/repos/OOP-Assessment2/OOP-Assessment2/bin/Debug/OOP_Assessment2.exe
+/Users/joeldavidson/repos/OOP-Assessment2/OOP-Assessment2/bin/Debug/OOP_Assessment2.pdb
+/Users/joeldavidson/repos/OOP-Assessment2/OOP-Assessment2/obj/Debug/OOP-Assessment2.csproj.AssemblyReference.cache
+/Users/joeldavidson/repos/OOP-Assessment2/OOP-Assessment2/obj/Debug/OOP-Assessment2.csproj.CoreCompileInputs.cache
+/Users/joeldavidson/repos/OOP-Assessment2/OOP-Assessment2/obj/Debug/OOP_Assessment2.exe
+/Users/joeldavidson/repos/OOP-Assessment2/OOP-Assessment2/obj/Debug/OOP_Assessment2.pdb
