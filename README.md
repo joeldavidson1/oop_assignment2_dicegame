@@ -12,4 +12,7 @@ A set number of rounds are played (say 5) and the player with the highest total 
 
 Source: http://www.dice-play.com/Games/ThreeOrMore.htm
 
+## University Assignment
 This game was used as the brief for Object Oriented Programming as the second assignment.
+
+The game's main functions are tested using the NUnit package.
