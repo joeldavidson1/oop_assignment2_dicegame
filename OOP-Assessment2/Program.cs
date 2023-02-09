@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace OOP_Assessment2
 {
-    internal class Program
+    internal class Program 
     {
         public static void Main(string[] args)
         {

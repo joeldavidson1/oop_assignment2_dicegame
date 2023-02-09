@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
+using System.Xml;
 using NUnit.Framework;
 using OOP_Assessment2;
 
@@ -48,8 +50,8 @@ namespace DiceGame.UnitTests
         [Repeat(100)]
         public void CreateDiceRolls_DieBetween1And6_ReturnsNumListBetween1And6()
         {
-            ListHandler listHandler = new ListHandler();
-            List<int> diceRolls = listHandler.CreateDiceRolls(false, new List<int>());
+            Die die = new Die();
+            List<int> diceRolls = ListHandler.CreateDiceRolls(false, new List<int>(), die);
             
             foreach (int diceNum in diceRolls)
             {
@@ -62,8 +64,8 @@ namespace DiceGame.UnitTests
         [Repeat(100)]
         public void CreateDiceRolls_RandomDieNumsAdded_ReturnsListCount5()
         {
-            ListHandler listHandler = new ListHandler();
-            List<int> diceRolls = listHandler.CreateDiceRolls(false, new List<int>());
+            Die die = new Die();
+            List<int> diceRolls = ListHandler.CreateDiceRolls(false, new List<int>(), die);
 
             int numOfDice = diceRolls.Count;
             
@@ -74,11 +76,11 @@ namespace DiceGame.UnitTests
         [Repeat(100)]
         public void CreateDiceRolls_RandomDieNumsAddedAdded_ReturnsDifferentListEachTime()
         {
-            ListHandler listHandler = new ListHandler();
-            List<int> diceRolls1 = listHandler.CreateDiceRolls(false, new List<int>());
-            List<int> diceRolls2 = listHandler.CreateDiceRolls(false, new List<int>());
-
-            Assert.That(diceRolls1, !Is.EquivalentTo(diceRolls2));
+            Die die = new Die();
+            List<int> diceRolls1 = ListHandler.CreateDiceRolls(false, new List<int>(), die);
+            List<int> diceRolls2 = ListHandler.CreateDiceRolls(false, new List<int>(), die);
+            
+            CollectionAssert.AreNotEqual(diceRolls1, diceRolls2);
         }
 
         [Test]
@@ -87,8 +89,9 @@ namespace DiceGame.UnitTests
             Player humanPlayer = new HumanPlayer();
 
             humanPlayer.AddPlayerPoints(Game.MaxPoints);
+            bool output = Calculate.HasPlayerWon(humanPlayer);
 
-            Assert.True(Calculate.HasPlayerWon(humanPlayer));
+            Assert.True(output);
         }
         
         [Test]
@@ -97,8 +100,9 @@ namespace DiceGame.UnitTests
             Player computerPlayer = new ComputerPlayer();
             
             computerPlayer.AddPlayerPoints(Game.MaxPoints - 1);
+            bool output = Calculate.HasPlayerWon(computerPlayer);
 
-            Assert.False(Calculate.HasPlayerWon(computerPlayer));
+            Assert.False(output);
         }
     }
 }

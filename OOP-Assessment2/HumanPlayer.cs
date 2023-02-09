@@ -1,40 +1,24 @@
 using System;
+using System.Data;
 using System.Linq;
 
 namespace OOP_Assessment2
 {
+    /// <summary>
+    /// A class that handles the human players, which inherits from the Player class.
+    /// </summary>
     public class HumanPlayer : Player
     {
-        public override void SetPlayerName(int humanCount)
+        /// <summary>
+        /// Overrides the base method and sets the name to the name parameter after formatting it.
+        /// </summary>
+        /// <param name="name">The name of the human.</param>
+        public override void SetPlayerName(string name)
         {
-            do
-            {
-                try
-                {
-                    Console.WriteLine($"Please enter player human {humanCount} name:");
-                    string name = Console.ReadLine();
-
-                    if (!name.All(Char.IsLetter) || string.IsNullOrWhiteSpace(name))
-                    {
-                        throw new InvalidInputException("Name must contain letters only.");
-                    }
-
-                    if (name.Length < 2)
-                    {
-                        throw new InvalidInputException("Name must contain more than 1 letter.");
-                    }
-
-                    name = name.ToLower();
-                    Console.WriteLine();
-                    Name = char.ToUpper(name[0]) + name.Substring(1);
-                    break;
-
-                }
-                catch (InvalidInputException e)
-                {
-                    Console.WriteLine($"\n{e.Message}");
-                }
-            } while (true);
+            // Convert name to lower case and capitalise the first letter.
+            name = name.ToLower();
+            name = char.ToUpper(name[0]) + name.Substring(1);
+            Name = name;
         }
     }
 }
